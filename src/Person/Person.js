@@ -2,9 +2,10 @@ import React from 'react';
 
 const person = ( props ) => {
 	return (
-		<React.Fragment>
-			Hello there {props.name}
-		</React.Fragment>
+		<div className="Person">
+			<img className="fullsc" src="http://placehold.it/80x80" alt="no"/>
+			<p>Hello there {props.name}</p>
+		</div>
 		
 	)
 }
