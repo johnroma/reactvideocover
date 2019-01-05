@@ -1,9 +1,11 @@
 import React from 'react';
 
+
+
 const person = ( props ) => {
 	return (
-		<div className="Person">
-			<img className="fullsc" src="http://placehold.it/80x80" alt="no"/>
+		<div className="Person" >
+			<img className="fullsc" src={ props.imgsrc } alt=""/>
 			<p>Hello there {props.name}</p>
 		</div>
 		
