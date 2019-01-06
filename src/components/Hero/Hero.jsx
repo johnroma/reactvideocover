@@ -13,7 +13,7 @@ render() {
 	  		<video id="bgvideo" autoPlay muted playsInline>
 				<source src={ bgvideo } type="video/mp4"></source>
 			</video>
-			<Video name="gustav" videosrc={ mainvideo } />
+			<Video name="Mr X" videosrc={ mainvideo } />
       </div>
     );
   }
