@@ -3,35 +3,36 @@ import './Hero.css';
 import Parallax from 'parallax-js'
 import mainvideo from '../../videos/cover.mp4';
 import bgvideo from '../../videos/bg.mp4';
-import VIDEO from './VIDEO';
+import VIDEO from '../VIDEO';
 
 
 class Hero extends Component {
 
-	constructor(props) {
-		super(props);
-
-	  }
 
 	componentDidMount() {
-		const scene = document.getElementsByClassName('Video')[0];
-		 new Parallax(scene);
+		
+		// const scene = document.getElementsByClassName('Video')[0];
+
+		//  console.log( this);
+		
+		// new Parallax(this.hej);
 
 	}
 
-	onResize() {
-		console.log('resize');
+	onChildCallHandler = () => {
+		console.log('child callin');
 		
 	}
+	onResize() {
+		console.log('resize');
+	}
+
 	render() {
 		
 		return (
 		
-		<div id="Hero">
-				<video id="bgvideo" autoPlay muted playsInline>
-					<source src={ bgvideo } type="video/mp4"></source>
-				</video>
-				<VIDEO name="Mr X" videosrc={ mainvideo } />
+		<div id="Hero" >
+			<VIDEO title="MrX" bgvideosrc={ bgvideo } videosrc={ mainvideo } />
 		</div>
 		);
 	}
