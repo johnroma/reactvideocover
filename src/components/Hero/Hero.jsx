@@ -8,24 +8,33 @@ import VIDEO from './VIDEO';
 
 class Hero extends Component {
 
+	constructor(props) {
+		super(props);
 
-componentDidMount() {
-	const scene = document.getElementById('parascene');
-	new Parallax(scene);
+	  }
 
-}
-render() {
-	
-    return (
-	
-      <div id="Hero">
-	  		<video id="bgvideo" autoPlay muted playsInline>
-				<source src={ bgvideo } type="video/mp4"></source>
-			</video>
-			<VIDEO name="Mr X" videosrc={ mainvideo } />
-      </div>
-    );
-  }
-}
+	componentDidMount() {
+		const scene = document.getElementsByClassName('Video')[0];
+		 new Parallax(scene);
+
+	}
+
+	onResize() {
+		console.log('resize');
+		
+	}
+	render() {
+		
+		return (
+		
+		<div id="Hero">
+				<video id="bgvideo" autoPlay muted playsInline>
+					<source src={ bgvideo } type="video/mp4"></source>
+				</video>
+				<VIDEO name="Mr X" videosrc={ mainvideo } />
+		</div>
+		);
+	}
+	}
 
 export default Hero;
