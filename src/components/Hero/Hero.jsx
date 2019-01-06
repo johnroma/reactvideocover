@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Hero.css';
 
-import mainvideo from './videos/cover.mp4';
-import bgvideo from './videos/bg.mp4';
-import Video from './components/Video';
+import mainvideo from '../../videos/cover.mp4';
+import bgvideo from '../../videos/bg.mp4';
+import Video from './video';
 
 
 class Hero extends Component {
