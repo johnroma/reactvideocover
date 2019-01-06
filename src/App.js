@@ -6,6 +6,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Hero />
+		<div>lorem ipsum</div>
       </React.Fragment>
     );
   }

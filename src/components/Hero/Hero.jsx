@@ -3,7 +3,7 @@ import './Hero.css';
 import Parallax from 'parallax-js'
 import mainvideo from '../../videos/cover.mp4';
 import bgvideo from '../../videos/bg.mp4';
-import Video from './video';
+import VIDEO from './VIDEO';
 
 
 class Hero extends Component {
@@ -22,7 +22,7 @@ render() {
 	  		<video id="bgvideo" autoPlay muted playsInline>
 				<source src={ bgvideo } type="video/mp4"></source>
 			</video>
-			<Video name="Mr X" videosrc={ mainvideo } />
+			<VIDEO name="Mr X" videosrc={ mainvideo } />
       </div>
     );
   }

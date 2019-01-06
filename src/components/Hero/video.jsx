@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const video = ( props ) => {
+const VIDEO = ( props ) => {
 	
 	return (
 		<div className="Video">
@@ -16,4 +16,4 @@ const video = ( props ) => {
 	)
 }
 
-export default video;
+export default VIDEO;
