@@ -1,0 +1,34 @@
+.Video {
+    position: relative;
+    width: 100%;
+	height: 100%;
+}
+
+.Video video{
+	width: 400px;
+    z-index: 1;
+    position: relative;
+    object-fit: contain;
+	margin: 0 auto;
+	display: block;
+	height: 100%;
+}
+
+.Video h1{
+	color: white;
+    position: absolute;
+    width: 100%;
+	text-align: center;
+	z-index: 2;
+	top:0;
+	margin:0;
+	line-height: 100vh;
+	margin-top: -100px;
+}
+
+.Video #landscape {
+
+	/* display: none;  */
+}
+
+video source#landscape { width: 10%; height: auto; }
