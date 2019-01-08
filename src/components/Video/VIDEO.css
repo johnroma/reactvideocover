@@ -26,9 +26,15 @@
 	margin-top: -100px;
 }
 
-.Video #landscape {
-
-	/* display: none;  */
+.bgvideo-container{
+	overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
-
-video source#landscape { width: 10%; height: auto; }
+.bgvideo {
+    position: absolute;
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}

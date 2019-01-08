@@ -33,7 +33,7 @@ class Hero extends Component {
 		return (
 		
 		<div id="Hero" >
-			<VIDEO title="MrX" srcBG={ bgvideo } srcLandscape={ video1 } srcPortrait={ video2 } />
+			<VIDEO srcBG={ bgvideo } srcLandscape={ video1 } srcPortrait={ video2 } />
 		</div>
 		);
 	}
