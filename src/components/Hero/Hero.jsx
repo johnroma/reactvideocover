@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './Hero.css';
-import Parallax from 'parallax-js'
-import video1 from '../../videos/cover-landscape.mp4';
-import video2 from '../../videos/cover-mobile.mp4';
-import bgvideo from '../../videos/bg.mp4';
-import VIDEO from '../Video/VIDEO';
+import VideoStory from '../VideoStory/VideoStory'
+
 
 
 class Hero extends Component {
@@ -33,7 +30,7 @@ class Hero extends Component {
 		return (
 		
 		<div id="Hero" >
-			<VIDEO srcBG={ bgvideo } srcLandscape={ video1 } srcPortrait={ video2 } />
+			<VideoStory />
 		</div>
 		);
 	}
