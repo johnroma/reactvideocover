@@ -17,12 +17,12 @@ const VIDEO = ( props ) => {
 			</div>
 		)
 	}
-	
+
 	return (
 		<React.Fragment>
 			{ props.srcBG? bgColorize():null }
-			<div className="Video" >
-				<video autoPlay loop muted playsInline key={ props.srcLandscape }>
+			<div className="Video" > 
+				<video autoPlay loop={ props.loop }  muted playsInline key={ props.srcLandscape } onEnded={ props.onVideoEnd }>
 				{ landscapeSrc() }
 				{ props.srcPortrait? portraitSrc():null }
 					
