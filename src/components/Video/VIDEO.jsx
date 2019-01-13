@@ -10,7 +10,7 @@ const VIDEO = ( props ) => {
 	let bgColorize = () =>
 	{
 		return(
-			<div className="bgvideo-container">
+			<div className="bgvideo-container" style={ props.disp? { display:'block' }:{ display:'none' } }>
 				<video className="bgvideo" autoPlay muted playsInline key={ props.srcBG }>
 					<source src={ props.srcBG } type="video/mp4"></source>
 				</video>
@@ -21,8 +21,8 @@ const VIDEO = ( props ) => {
 	return (
 		<React.Fragment>
 			{ props.srcBG? bgColorize():null }
-			<div className="Video" > 
-				<video autoPlay loop={ props.loop }  muted playsInline key={ props.srcLandscape } onEnded={ props.onVideoEnd }>
+			<div className="Video" style={ props.disp? { display:'block' }:{ display:'none' } }> 
+				<video autoPlay loop={ props.loop }  muted playsInline key={ props.srcLandscape} onEnded={ props.onVideoEnd }>
 				{ landscapeSrc() }
 				{ props.srcPortrait? portraitSrc():null }
 					
